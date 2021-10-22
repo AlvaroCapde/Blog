@@ -1,0 +1,23 @@
+
+<div class="bg-white">
+    <h1 class="text-center font-extrabold text-4xl">Our flawless  <span class="text-red-600"> Steak </span> list</h1>
+    <div class="max-w-7xl mx-auto py-16 px-4 overflow-hidden sm:py-24 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+        <% for(var i=0; i<postList.length; i++) {%>
+            <a href="#" class="group text-sm mt-5">
+                <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100 group-hover:opacity-75">
+                  <img src=<%= postList[i].photoURL %>   alt="White fabric pouch with white zipper, black zipper pull, and black elastic loop." class="w-full h-full object-center object-cover">
+                </div>
+                <h3 class="mt-4 font-medium text-gray-900">
+                    <%= postList[i].steakName %>
+                </h3>
+                <p class="text-gray-500 italic">
+                    <%= postList[i].author %>
+                </p>
+            </a>
+        <% } %> 
+        
+      </div>
+    </div>
+  </div>
+  
